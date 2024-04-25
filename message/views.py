@@ -1,5 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
-def send_message(request):
-    return HttpResponse('<h1>this is some dummy text</h1>')
+def message(request):
+    return render(request, 'index.html')
+
