@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>this is some dummy text</h1>
+
+    {% for message in messages %}
+        <h1>
+            {{ message.text }}
+        </h1>
+    {% endfor %}
+
 {% endblock content %}
